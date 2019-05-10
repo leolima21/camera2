@@ -22,6 +22,7 @@ def callback(data):
 
     # Exibir a imagem em uma janela
     cv2.imshow('frame', cv2_frame)    
+    cv2.waitKey(1)
 
 
 def listener():
@@ -38,3 +39,4 @@ def listener():
 # Funcao main
 if __name__ == '__main__':
     listener()
+
