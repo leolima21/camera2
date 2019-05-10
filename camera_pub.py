@@ -26,8 +26,8 @@ def talker():
     cap = cv2.VideoCapture(0)
 
     # Setup de largura e altura da captura
-    cap.set(3, 640)
-    cap.set(4, 480)
+    cap.set(3, 320)
+    cap.set(4, 240)
 
     while not rospy.is_shutdown():           
         # Captura de um frame na camera
@@ -41,7 +41,7 @@ def talker():
         pub.publish(ros_frame)
 
         # Esperar algum tempo para a proxima publicacao
-        time.sleep(0.033) # 30 publicacoes por segundo
+        #time.sleep(0.033) # 30 publicacoes por segundo
 
 
 # Funcao main
